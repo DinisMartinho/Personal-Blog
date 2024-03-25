@@ -6,14 +6,17 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Dinis Martinho</title>
   <link rel="icon" href="../thumbnails/distorted.jpeg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&family=Poppins:wght@400;500;600&family=Shantell+Sans:wght@300;700&display=swap">
   <style>
     body {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column; /* Added to stack paragraphs vertically */
       height: 100vh;
       margin: 0;
       background: #fff;
+      font-family: 'Poppins', sans-serif; /* Fallback font */
     }
 
     #unity-container {
@@ -26,6 +29,20 @@
       width: 100%;
       height: 100%;
     }
+
+    .custom-font {
+      font-family: 'Nanum Gothic Coding', monospace;
+      margin-top: 10px; /* Added margin for separation */
+    }
+    .size {
+      margin-top: 25px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .wrapper {
+      max-width: 512px;
+      text-align: center;
+    }
   </style>
 </head>
 
@@ -33,6 +50,14 @@
   <div id="unity-container">
     <canvas id="unity-canvas"></canvas>
   </div>
+
+
+  <p class="custom-font size">Procedurally-Animated-Shark</p>
+  <p class="custom-font wrapper">
+    Example demonstration of a procedurally animated shark showcasing Unity's potential for organic animations. Built using a process similar to inverse kinematics.
+  </p>
+
+
   <script src="Build/Downloads.loader.js"></script>
   <script>
     if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
